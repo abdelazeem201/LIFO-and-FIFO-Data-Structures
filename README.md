@@ -1,0 +1,2 @@
+# LIFO-and-FIFO-Data-Structures
+In audio, we often use std::vector and arrays for holding data. It is a flexible data structure that allows random reads and writes. However, we may want to restrict the processing order. In this case, we may use other STL container classes or we may create data structures such as stacks and queues.  Two common data structures in computer science are LIFO (last-in-first-out) and FIFO (first-in-first-out).
