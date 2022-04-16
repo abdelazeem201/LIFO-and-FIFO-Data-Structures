@@ -95,7 +95,7 @@ begin
 				if(empty_reg /= '1') then
 					pop_ptr_next <= pop_ptr_succ;
 					full_next <= '0';
-					if (pop_ptr_succ = push_ptr_reg) then
+					if (pop_ptr_succ = (others => '0')) then
 						empty_next <= '1';
 					end if;	
 				end if;
@@ -103,7 +103,7 @@ begin
 				if(full_reg /= '1') then
 					push_ptr_next <= push_ptr_succ;
 					empty_next <= '0';
-					if (push_ptr_succ = pop_ptr_reg)then
+					if (push_ptr_succ = (2**W - 1))then
 						full_next <= '1';
 					end if;	
 				end if;			
